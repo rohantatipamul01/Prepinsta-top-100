@@ -6,22 +6,22 @@ public class HCF {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter first number :");
         int num1=sc.nextInt();
-        System.out.println("Enter second number :");
+        System.out.println("Enter seconds number :");
         int num2=sc.nextInt();
-        int hcf=factor(num1, num2);
-        System.out.println("The HCF of "+num1+" and "+num2+" is "+hcf);
+        int hcf1=factor(num1, num2);
+        System.out.println("The HCF of "+num1+" and "+num2+" is "+hcf1);
         sc.close();
     }
     static int factor(int num1,int num2)
     {
-        int hcf=0;
+        int hcf1=0;
         for(int i=1;i<num1 || i<num2;i++)
         {
             if(num1%i==0 && num2%i==0)
             {
-                hcf=i;
+                hcf1=i;
             }
         }
-        return hcf;
+        return hcf1;
     }
 }
